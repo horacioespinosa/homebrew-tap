@@ -5,21 +5,21 @@
 class Memory < Formula
   desc "Persistent memory for AI coding agents. Agent-agnostic, single binary, zero dependencies."
   homepage "https://github.com/HoracioEspinosa/memory"
-  version "1.0.1"
+  version "1.0.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/horacioespinosa/memory/releases/download/v1.0.1/memory_1.0.1_darwin_amd64.tar.gz"
-      sha256 "6ffbd1e4d18862d5d51b5837f6d58e45df588abcf885c9bd588b78cdb386f062"
+      url "https://github.com/horacioespinosa/memory/releases/download/v1.0.2/memory_1.0.2_darwin_amd64.tar.gz"
+      sha256 "1d5e22d982026ea75c1ccdddd866843c356658ef8e1876bed633ea5e6ebfa36a"
 
       def install
         bin.install "memory"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/horacioespinosa/memory/releases/download/v1.0.1/memory_1.0.1_darwin_arm64.tar.gz"
-      sha256 "e43c03bb36647aa126c15fc10bc20380259e0b381ab5e6cd91f46adaab0ebe66"
+      url "https://github.com/horacioespinosa/memory/releases/download/v1.0.2/memory_1.0.2_darwin_arm64.tar.gz"
+      sha256 "2ca987b1c47ac5d7723ffdcea2eaa922712f3dd5bd73da3fdb602ee369523317"
 
       def install
         bin.install "memory"
@@ -29,15 +29,15 @@ class Memory < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/horacioespinosa/memory/releases/download/v1.0.1/memory_1.0.1_linux_amd64.tar.gz"
-      sha256 "587a96ecd4d1048812826914385223dee27650ee9e5aaee502925d66ceec626b"
+      url "https://github.com/horacioespinosa/memory/releases/download/v1.0.2/memory_1.0.2_linux_amd64.tar.gz"
+      sha256 "cb2a6f92c55310c00a0a3d3b6c4a9677e6fa09a2a99d8a67af5a8c6541736af9"
       def install
         bin.install "memory"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/horacioespinosa/memory/releases/download/v1.0.1/memory_1.0.1_linux_arm64.tar.gz"
-      sha256 "b83e110bf76f9e799899e70b9ac3b56716c14dc55424f2584165baf4f106d95c"
+      url "https://github.com/horacioespinosa/memory/releases/download/v1.0.2/memory_1.0.2_linux_arm64.tar.gz"
+      sha256 "d44e9e52cb595714dbd9c9588035fbcd65ae5d878c90997882678697be4d4e21"
       def install
         bin.install "memory"
       end
