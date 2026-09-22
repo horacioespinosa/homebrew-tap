@@ -5,21 +5,21 @@
 class EngramCustom < Formula
   desc "Engram (ClaroDrive fork): persistent memory for AI coding agents, with engram-projects"
   homepage "https://github.com/HoracioEspinosa/engram"
-  version "1.20.0-cd.14"
+  version "1.20.0-cd.15"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/HoracioEspinosa/engram/releases/download/v1.20.0-cd.14/engram_1.20.0-cd.14_darwin_amd64.tar.gz"
-      sha256 "01bc4b0cee916de4713cbce2903491d0eae2408b600cf905f6cf7954609f33b5"
+      url "https://github.com/HoracioEspinosa/engram/releases/download/v1.20.0-cd.15/engram_1.20.0-cd.15_darwin_amd64.tar.gz"
+      sha256 "1f0f63cdcc3d307e00856ce82906206e19b9272423a78c259607d4530fe0cca7"
 
       def install
         bin.install "engram"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/HoracioEspinosa/engram/releases/download/v1.20.0-cd.14/engram_1.20.0-cd.14_darwin_arm64.tar.gz"
-      sha256 "d3cfe468ca55c93d6092afddf507105717e36af5f5164b070147a933744506e1"
+      url "https://github.com/HoracioEspinosa/engram/releases/download/v1.20.0-cd.15/engram_1.20.0-cd.15_darwin_arm64.tar.gz"
+      sha256 "43ddd21fd914ceef42f2a380d4d62435d8b565f9a6c1e75300a8ecfde128077d"
 
       def install
         bin.install "engram"
@@ -29,15 +29,15 @@ class EngramCustom < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/HoracioEspinosa/engram/releases/download/v1.20.0-cd.14/engram_1.20.0-cd.14_linux_amd64.tar.gz"
-      sha256 "e0b095ce23eace8d4d04bcc97253cd55e81a8eeec6a548421a0ce9758635faa6"
+      url "https://github.com/HoracioEspinosa/engram/releases/download/v1.20.0-cd.15/engram_1.20.0-cd.15_linux_amd64.tar.gz"
+      sha256 "6ec4701a8552323ce8170f8e98578ff530ca36838fe57da67e78569f7c2ca909"
       def install
         bin.install "engram"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/HoracioEspinosa/engram/releases/download/v1.20.0-cd.14/engram_1.20.0-cd.14_linux_arm64.tar.gz"
-      sha256 "06ce01180a34b3d360fceb09af8d1d43e3cde0ab3b62d02fdcdb7e332ca4b37b"
+      url "https://github.com/HoracioEspinosa/engram/releases/download/v1.20.0-cd.15/engram_1.20.0-cd.15_linux_arm64.tar.gz"
+      sha256 "90b7ff08df94b339e4e3adcae1e8bb8f6180941c7b15704b3826660878129776"
       def install
         bin.install "engram"
       end
